@@ -37,7 +37,7 @@ int main()
     while(1)
     {
         scanf("%d",&n);
-        psize = n; 
+        psize = n;
 
         if(n==0)
             break;
@@ -74,7 +74,7 @@ int main()
                             prtspx(pix, psize, i*psize, j*psize);
                     }
                 }
-            if(pix[0][0] == ' ')
+            if(pix[0][0] == ' ')  //单独处理[0,0]
                 prtspx(pix, psize, 0, 0);
 
             psize*=n;
